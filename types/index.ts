@@ -3,6 +3,9 @@ export interface GeneratedContent {
   shortsScript: string
   caption: string
   hashtags: string[]
+  twitterThread: string
+  emailSubject: string
+  blogIntro: string
 }
 
 export interface HistoryEntry {
@@ -22,4 +25,19 @@ export interface GenerateRequest {
   inputText: string
   platform: Platform
   tone: Tone
+}
+
+export interface TrendingTopic {
+  id: string
+  title: string
+  platform: string
+  category: string
+  engagement: string
+}
+
+export interface UserStats {
+  totalGenerations: number
+  thisMonth: number
+  favouritePlatform: string
+  timeSaved: string
 }
